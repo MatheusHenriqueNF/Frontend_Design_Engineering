@@ -1,0 +1,73 @@
+*{
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: #a10303;
+    color:#fff;
+    margin-bottom:30px;
+}
+header h1{
+    font-size: 20px;
+}
+.wrapper{
+    width: 90%;
+    text-align: left;
+}
+
+h2{
+    margin-left:0;
+    width:50%;
+    font-size: 18px;
+    padding:20px;
+    border-left: 8px solid #a10303;
+    border-bottom: 2px solid #a10303;
+
+}
+fieldset{
+    padding: 20px;
+    border: 1px solid #a10303;
+}
+legend{
+    color:#a10303;
+    margin-left:20px;
+    padding:20px;
+}
+.identificacao{
+    width: 60%;
+    height: 300px;
+    float:left;
+    margin-right: 20px;
+}
+.fotografia{
+    width: 25%;
+    height: 300px;
+    float:left;
+
+}
+label{
+    display: block;
+    color:#a10303;
+}
+.campo{
+    border: 1px solid #a10303;
+    height: 30px;
+}
+.txtNome{
+    width: 800px;
+
+}
+.campos{
+    float: left;
+    margin:20px 20px 20px 0;
+}
+.txtRG, .txtCPF{
+    width: 400px;
+}
+.botoes{
+    width:90%;
+    float: left;
+    text-align: right;
+}

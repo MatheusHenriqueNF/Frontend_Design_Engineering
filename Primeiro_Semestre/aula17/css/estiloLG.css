@@ -1,0 +1,24 @@
+@media(min-width:1200px){
+
+
+    #wrapper{
+        background-color: rgb(197, 155, 41);
+    }
+
+    header{
+        background-color: blueviolet;
+    }
+
+    #sm, #xs, #xl, #md, #el{
+        display: none;
+    }
+
+    #lg{
+        display: block;
+    }
+
+    .content{
+        width: 95%;
+        background-color: rgb(1, 252, 34);
+    }
+}
