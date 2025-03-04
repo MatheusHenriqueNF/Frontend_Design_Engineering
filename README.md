@@ -3,7 +3,7 @@
 
 ## 📂 Estrutura do Repositório
 
-- **Primeiro_Semestre*: Contém materiais e recursos utilizados durante o primeiro semestre do curso, incluindo slides, exemplos de código e exercícios práticos.
+- **Primeiro_Semestre*: Contém materiais e recursos utilizados durante o primeiro semestre do curso, incluindo slides, exemplos de código e exercícios práticos.
 
 - **Segundo_Semestre*: Inclui conteúdos abordados no segundo semestre, focando em tópicos avançados de design e engenharia frontend.
 
