@@ -1,0 +1,15 @@
+@media (min-width: 1200px) {
+
+    #wrapper{
+        background-color: rgb(114, 25, 25);
+    }
+    header{
+        background-color: rgb(75, 125, 133);
+    }
+    #xl{
+        display: block;
+    }
+    .content{
+        width: 95%;
+    }
+}

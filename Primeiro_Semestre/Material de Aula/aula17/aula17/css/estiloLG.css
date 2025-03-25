@@ -1,0 +1,12 @@
+@media (min-width: 992px) and (max-width:1199.9px) {
+
+    #wrapper{
+        background-color: rgb(16, 101, 211);
+    }
+    header{
+        background-color: rgb(241, 238, 27);
+    }
+    #lg{
+        display: block;
+    }
+}

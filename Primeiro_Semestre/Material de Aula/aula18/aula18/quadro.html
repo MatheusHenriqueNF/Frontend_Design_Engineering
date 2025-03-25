@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 910px;
+            height: 910px;
+            background: #ffff00;
+            position: relative;
+        }
+        #quadro{
+            width: 50px;
+            height: 50px;
+            background: #ff0000;
+            position: absolute;
+        }
+    </style>
+    <script>
+        function Mover(){
+            var quadro = document.getElementById("quadro");
+            posX = 0;
+            posY = 0;
+            sentido = 'dir';
+
+            x = setInterval(Animacao,5)
+            
+            function Animacao(){
+                if(sentido == 'dir'){
+                    quadro.style.left = posX + "px";
+                    posX++;
+                    if(posX == 860){
+                        sentido = 'baixo';
+                    }
+                }
+                else{
+                    if(sentido == 'baixo'){
+                        quadro.style.top = posY + "px";
+                        posY++;
+                        if(posY == 860){
+                            sentido = 'esq';
+                        }
+                    }
+                    else{
+                        if(sentido == 'esq'){
+                            quadro.style.left = posX + "px";
+                            posX--;
+                            if(posX == 0){
+                                sentido = 'topo';
+                            }
+                        }
+                        else{
+                            if(sentido == 'topo'){
+                                quadro.style.top = posY + "px";
+                                posY--;
+                                if(posY == 0){
+                                    sentido = 'esq';
+                                    clearInterval(x)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <button onclick="Mover()">Click</button>
+    <div id="container">
+        <div id="quadro"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/padrao.css">
+    <link rel="stylesheet" href="css/estiloXS.css">
+    <link rel="stylesheet" href="css/estiloSM.css">
+    <link rel="stylesheet" href="css/estiloMD.css">
+    <link rel="stylesheet" href="css/estiloLG.css">
+    <link rel="stylesheet" href="css/estiloXL.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <section class="content">
+                <h1 id="xs">Extra Small</h1>
+                <h1 id="sm">Small</h1>
+                <h1 id="md">Meduim</h1>
+                <h1 id="lg">Large</h1>
+                <h1 id="xl">Extra Large</h1>
+            </section>
+        </header>
+        <section class="content">
+            <h2>Conteúdo</h2>
+            <picture>
+                <source media="(max-width: 599.99px)" srcset="imagens/img320.png">
+                <source media="(min-width: 600px) and (max-width:767.9px)" srcset="imagens/img600.png">
+                <source media="(min-width: 768px) and (max-width:991.9px)" srcset="imagens/img768.png">
+                <source media="(min-width: 992px) and (max-width:1199.9px)" srcset="imagens/img992.png">
+                <source media="(min-width: 1200px)" srcset="imagens/img1200.png">
+                <img src="" alt="Imagem X" title="Imagem X">
+            </picture>
+        </section>
+
+            <!-- 
+                XS - eXtra Small devices (phones, 600px and down) 
+                @media only screen and (max-width: 600px) {...}
+
+                SM - SMall devices (portrait tablets and large phones, 600px and up) 
+                @media only screen and (min-width: 600px) {...}
+
+                MD - MeDium devices (landscape tablets, 768px and up) 
+                @media only screen and (min-width: 768px) {...}
+
+                LG - LarGe devices (laptops/desktops, 992px and up) 
+                @media only screen and (min-width: 992px) {...}
+
+                XL - eXtra Large devices (large laptops and desktops, 1200px and up) 
+                @media only screen and (min-width: 1200px) {...}
+            -->
+        
+    </div>
+</body>
+</html>

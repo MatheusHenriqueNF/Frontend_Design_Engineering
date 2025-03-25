@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloXS.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav class="menu_hamburguer">
+                <input type="checkbox" id="menu_toggle">
+                <label for="menu_toggle" class="menu_btn"><span></span></label>
+                <ul class="menu_box">
+                    <li><a href="#" class="menu_item">Produtos</a></li>
+                    <li><a href="#" class="menu_item">Quem Somos</a></li>
+                    <li><a href="#" class="menu_item">Equipe</a></li>
+                    <li><a href="#" class="menu_item">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="login"><a href="#">Login</a></div>
+            <img src="img/logo.png" class="logo" alt="Página Inicial" title="Página Inicial">
+        </header>
+
+        <div id="slider">
+            <div class="panel active" style="background-image: url('img/impossiveis.png');"></div>
+            <div class="panel" style="background-image: url('img/metallica.png');"></div>
+            <div class="panel" style="background-image: url('img/pj.png');"></div>
+            <div class="panel" style="background-image: url('img/ramones.png');"></div>
+        </div>
+    </div>
+
+    <script>
+        const panels =document.querySelectorAll('.panel');
+        panels.forEach((panel) => {
+            panel.addEventListener('click', () => {
+                removeActiveClasses();
+                panel.classList.add('active');
+            })
+        })
+        const removeActiveClasses = () => {
+            panels.forEach((panel) => {
+                panel.classList.remove('active');
+            })
+        }
+    </script>
+
+</body>
+</html>

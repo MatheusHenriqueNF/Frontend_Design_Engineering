@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function SomenteNumeros(e){
+            var tecla = (window.event) ? event.keyCode : e.which;
+            if((tecla > 47 && tecla < 58) || (tecla > 95 && tecla < 106)) return true;
+            else{
+                if(tecla == 8) return true
+                else return false;
+            }
+        }
+
+        function Mascara(formato,campo){
+            campo = eval(campo);
+
+            sep1 = '.';
+            sep2 = '-';
+            sep3 = '(';
+            sep4 = ') '
+
+            if(formato == 'cpf'){
+                if(campo.value.length == 3){
+                    campo.value = campo.value + sep1;
+                }
+                else{
+                    if(campo.value.length == 7){
+                        campo.value = campo.value + sep1;
+                    }
+                    else{
+                        if(campo.value.length == 11){
+                            campo.value = campo.value + sep2;
+                        }
+                    }
+                }
+            }
+            else{
+                if(formato == 'cep'){
+                    if(campo.value.length == 5){
+                     campo.value = campo.value + sep2;
+                    }
+                }
+                else{
+                    if(formato == 'tel'){
+                        if(campo.value.length == 0){
+                            //campo.value = campo.value + sep3;
+                            campo.value += sep3;
+                        }
+                        else {
+                            if(campo.value.length == 3){
+                                //campo.value = campo.value + sep3;
+                                campo.value += sep4;
+                            }
+                            else{
+                                if(campo.value.length == 10){
+                                    //campo.value = campo.value + sep3;
+                                    campo.value += sep2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        function DesabilitaEnter(e){
+            var tecla = (window.event) ? event.keyCode : e.which;
+            if (tecla == 13) return false;
+        }
+    </script>
+</head>
+<body>
+    <form onkeypress="return DesabilitaEnter(event)">
+        <label for="txtNome">Nome</label>
+        <input type="text" name="txtNome" id="txtNome">
+        <br>
+        <label for="txtCPF">CPF</label>
+        <input type="text" name="txtCPF" id="txtCPF" onkeypress="Mascara('cpf',this)" onkeydown="return SomenteNumeros(event)" maxlength="14">
+        <br>
+        <label for="txtCEP">CEP</label>
+        <input type="text" name="txtCEP" id="txtCEP" onkeypress="Mascara('cep',this)" onkeydown="return SomenteNumeros(event)" maxlength="9">
+        <br>
+        <label for="txtTEl">TEL</label>
+        <input type="text" name="txtTEl" id="txtTEl" onkeypress="Mascara('tel',this)" onkeydown="return SomenteNumeros(event)" maxlength="15">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Checkpoint 02</h1>
+        </div>
+    </header>
+    <div class="wrapper">
+        <h2>Formulário de Cadastro</h2>
+        <form>
+            <fieldset class="identificacao">
+                <legend>Identificação</legend>
+                <label for="txtNome">Nome</label>
+                <input type="text" name="txtNome" id="txtNome" class="campo txtNome">
+
+                <div class="campos">
+                    <label for="txtRG">RG</label>
+                    <input type="number" name="txtRG" id="txtRG" class="campo txtRG">
+                </div>
+                <div class="campos">
+                    <label for="txtCPF">CPF</label>
+                    <input type="number" name="txtCPF" id="txtCPF" class="campo txtCPF">
+                </div>
+
+            </fieldset>
+
+            <fieldset class="fotografia">
+                <legend>Fotografia</legend>
+            </fieldset>
+            <div class="botoes">
+                <button type="reset">Cancelar</button>
+                <button type="button" onclick="validar()">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

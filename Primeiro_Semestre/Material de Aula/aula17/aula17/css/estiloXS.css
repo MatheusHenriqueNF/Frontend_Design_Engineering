@@ -1,0 +1,12 @@
+@media (max-width: 599.99px) {
+    #wrapper{
+        background-color: aquamarine;
+    }
+    header{
+        background-color: blueviolet;
+    }
+    
+    #xs{
+        display: block;
+    }
+}

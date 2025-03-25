@@ -1,0 +1,50 @@
+*{
+    margin: 0px auto;
+    color: #fff;
+    text-align: center;
+    
+}
+body{
+    background-color: black;
+}
+#wrapper{
+    width: 972px;
+    height: 954px;
+    margin-top: 10px;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    float:left;
+}
+.invisivel{
+    border-color: #000;
+}
+.amarelo{
+    border-color: #ff0;
+}
+.verde{
+    border-color: #008000;
+}
+.vermelho{
+    border-color: #f00;
+}
+.num{
+    font-size: 8px;
+    text-align: left;
+}
+.sigla{
+    font-size: 12px;
+    font-weight: bold;
+}
+.nome{
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.peso{
+    font-size: 8px;
+}
